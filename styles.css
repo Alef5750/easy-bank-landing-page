@@ -1,8 +1,18 @@
       nav {
+        background-color: #FFFFFF;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding: 20px 200px;
+      }
+      footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #2D314E;
+        padding: 30px 200px;
+        color: white;
       }
       .logo {
         width: 10rem;
@@ -12,12 +22,22 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        justify-content: space-between;
+      }
+      ul {
+          display: flex;
+        flex-direction: row;
+      }
+      li {
         list-style-type: none;
+      }
+      .directory li {
+        margin: 0px 15px;
       }
 
       button {
         border: none;
-        color: black;
+        color: #ECFFF1;
         padding: 10px 20px;
         text-align: center;
         text-decoration: none;
@@ -25,4 +45,33 @@
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 20px;
+        background: linear-gradient(90deg, #31CF6D, #2CB9CB);
+        height: 35px;
+        width: 150px;
+      }
+
+      .footer-group-1 {
+        border: 1px solid yellow;
+        display: flex;
+        flex-direction: row;
+        width: 50%
+      }   
+      .footer-group-2 {
+        border: 1px solid orange;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-around;
+        width: 50%
+      }
+      .footer-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .footer-directory {
+       display: grid;
+       grid-template-columns: auto auto;
+       column-gap: 100px;
+       row-gap: 15px;
       }
