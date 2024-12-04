@@ -3,6 +3,8 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
   line-height: 125%;
+  position: relative;
+  z-index: 1
 }
 
 nav {
@@ -11,6 +13,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px 175px;
+  z-index: 6;
+  position: relative;
 }
 
 .logo {
@@ -48,8 +52,9 @@ button {
   cursor: pointer;
   border-radius: 20px;
   background: linear-gradient(90deg, #31cf6d, #2cb9cb);
-  height: 35px;
-  width: 150px;
+  height: 43px;
+  width: 160px;
+  font-weight: 600;
 }
 
 footer {
@@ -107,6 +112,9 @@ section {
   justify-content: space-between;
   gap: 30px;
 }
+.why-choose-item p {
+  font-size: 16px;
+}
 article {
   background: rgb(235, 143, 143);
   border-radius: 7px;
@@ -126,6 +134,12 @@ article {
   height: 75px;
   width: 75px;
 }
+
+/* FONT SIZES */
+h1 {
+  margin-top: 70px;
+  font-size: 55px;
+}
 h2 {
   font-size: 40px;
 }
@@ -135,10 +149,17 @@ h3 {
 h4 {
   font-size: 17px;
 }
+p {
+  font-size: 18px;
+}
+
 h5,
 p,
 .directory {
   color: #bdbdc0;
+}
+.article-text p {
+  font-size: 13px;
 }
 
 .article-text {
@@ -147,4 +168,11 @@ p,
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+}
+
+.section-1-images {
+  position: absolute;
+  top: -260px;
+  right: -639px;
+  z-index: 1;
 }
